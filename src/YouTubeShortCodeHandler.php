@@ -1,5 +1,12 @@
 <?php
 
+namespace WebOfTalent\ShortCode\YouTube;
+
+use Convert;
+use SSViewer;
+use ArrayData;
+
+
 class YouTubeShortCodeHandler {
 
 	// taken from http://www.ssbits.com/tutorials/2010/2-4-using-short-codes-to-embed-a-youtube-video/ and adapted for SS3
