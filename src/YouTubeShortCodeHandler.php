@@ -1,9 +1,18 @@
 <?php
 
+namespace WebOfTalent\ShortCode\YouTube;
+
+
+
+
+use SilverStripe\Core\Convert;
+use SilverStripe\View\ArrayData;
+use SilverStripe\View\SSViewer;
+
 class YouTubeShortCodeHandler {
 
 	// taken from http://www.ssbits.com/tutorials/2010/2-4-using-short-codes-to-embed-a-youtube-video/ and adapted for SS3
-	public static function parse_youtube($arguments, $caption = null, $parser = null, $tagName) {
+	public static function handle_shortcode($arguments, $caption = null, $parser = null, $tagName) {
 		// first things first, if we dont have a video ID, then we don't need to
 		// go any further
 		if (empty($arguments['id'])) {
@@ -29,7 +38,7 @@ class YouTubeShortCodeHandler {
 		$customise['Height'] = $heightSet ? $arguments['height'] : 315;
 
 		//get our YouTube template
-		$template = new SSViewer('YouTube');
+		$template = new SSViewer('Includes/YouTube');
 
 		//return the customised template
 		return $template->process(new ArrayData($customise));

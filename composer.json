@@ -1,8 +1,12 @@
 {
 	"name": "weboftalent/silverstripe-shortcode-youtube",
-	"description": "Adds a shortcode for embedding YouTube video.  For Silverstripe",
-	"type": "silverstripe-module",
-	"keywords": ["silverstripe", "shortcode","youtube"],
+	"description": "Adds a shortcode for embedding YouTube video.  For Silverstripe 4",
+	"type": "silverstripe-vendormodule",
+	"keywords": [
+		"silverstripe",
+		"shortcode",
+		"youtube"
+	],
 	"authors": [
 		{
 			"name": "Gordon Anderson",
@@ -11,12 +15,23 @@
 			"role": "Developer"
 		}
 	],
-    "support": {
-        "issues": "https://github.com/gordonbanderson/weboftalent-youtube/issues"
-    },
-	"require":
-	{
-		"silverstripe/cms": "~3.1"
+	"autoload": {
+		"psr-4": {
+			"WebOfTalent\\ShortCode\\YouTube\\": "src/"
+		}
 	},
-	"license": "MIT"
+	"support": {
+		"issues": "https://github.com/gordonbanderson/weboftalent-youtube/issues"
+	},
+	"require": {
+		"php": ">=5.6",
+		"silverstripe/recipe-cms": "^4"
+	},
+	"license": "MIT",
+	"require-dev": [],
+	"extra": {
+		"expose": [
+			"css"
+		]
+	}
 }

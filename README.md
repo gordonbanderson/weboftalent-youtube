@@ -1,4 +1,4 @@
-#YouTube ShortCode Handler
+# YouTube ShortCode Handler
 [![Build Status](https://travis-ci.org/gordonbanderson/weboftalent-youtube.svg?branch=master)](https://travis-ci.org/gordonbanderson/weboftalent-youtube)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gordonbanderson/weboftalent-youtube/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gordonbanderson/weboftalent-youtube/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/gordonbanderson/weboftalent-youtube/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/gordonbanderson/weboftalent-youtube/?branch=master)
@@ -16,12 +16,13 @@
 [![Reference Status](https://www.versioneye.com/php/weboftalent:silverstripe-shortcode-youtube/reference_badge.svg?style=flat)](https://www.versioneye.com/php/weboftalent:silverstripe-shortcode-youtube/references)
 
 ![codecov.io](https://codecov.io/github/gordonbanderson/weboftalent-youtube/branch.svg?branch=master)
-This module allows YouTube videos to be entered as short codes.  It is based on
-the SSBits tutorial
-http://www.ssbits.com/tutorials/2010/2-4-using-short-codes-to-embed-a-youtube-video/
-and adpated to work with Silverstripe 3.
 
-##Functionality
+This module allows YouTube videos to be entered as short codes.  It is based on
+the now defunct SSBits tutorial
+http://www.ssbits.com/tutorials/2010/2-4-using-short-codes-to-embed-a-youtube-video/
+and adpated to work with Silverstripe 4.
+
+## Functionality
 Videos can be entered into a page using the YouTube code (the v parameter in a YouTube URL).
 ```
 [YouTube id='_yY3Gu8HbzE']
