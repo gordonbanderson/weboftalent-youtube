@@ -29,6 +29,7 @@ class YouTubeShortCodeHandler {
 		$customise['AutoPlay'] = $set ? true : false;
 
 		//set the caption
+		$caption = isset($arguments['caption']) ? $arguments['caption'] : '';
 		$customise['Caption'] = $caption ? Convert::raw2xml($caption) : false;
 
 		//set dimensions
