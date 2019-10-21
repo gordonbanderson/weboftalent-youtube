@@ -35,3 +35,8 @@ passed as an attribute or as follows ```[YouTube id='_yY3Gu8HbzE']This is the
 caption[/YouTube]```
 - _height_ - set the height of the video
 - _width_ - set the width of the video
+
+These are optional.  If not provided the whole video is played.
+- _start_ - set the start of the video in seconds
+- _end_ - set the end of the video in seconds
+

@@ -38,6 +38,28 @@ class YouTubeShortCodeHandler {
 		$customise['Width'] = $widthSet ? $arguments['width'] : 560;
 		$customise['Height'] = $heightSet ? $arguments['height'] : 315;
 
+		$customise['Start'] = isset($arguments['start']) ? $arguments['start'] : null;
+		$customise['End'] = isset($arguments['end']) ? $arguments['end'] : null;
+
+		$src = 'https://www.youtube.com/embed/'. $arguments['id'];
+		$prefix='?';
+		if ($customise['AutoPlay']) {
+			$src .= $prefix . 'AutoPlay=1';
+			$prefix='&';
+		}
+
+		if ($customise['Start']) {
+			$src .= $prefix . '&start=' . $customise['Start'];
+			$prefix='&';
+		}
+
+		if ($customise['End']) {
+			$src .= $prefix . '&end=' . $customise['End'];
+			$prefix='&';
+		}
+
+		$customise['URL'] = $src;
+		
 		//get our YouTube template
 		$template = new SSViewer('Includes/YouTube');
 
